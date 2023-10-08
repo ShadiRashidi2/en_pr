@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(253, 101, 133, 1) 0%,
+    rgba(255, 211, 165, 1) 90%
+  );
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  width: 400px;
+  height: 300px;
+  background-color: #ffffff;
+  padding: 10px 30px;
+}
+
+.card_title {
+  text-align: center;
+  padding: 10px;
+}
+
+.card_title h1 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.form input {
+  margin: 10px 0;
+  width: 100%;
+  background-color: #e2e2e2;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 4px;
+  direction: rtl;
+}
+
+.form button {
+  background-color: #4796ff;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding: 8px 15px;
+ float: right;
+}
+.card a {
+  color: #4796ff;
+  text-decoration: none;
+}
+
+</style>
+<body>
+ <div class="container">
+      <div class="card">
+        <div class="card_title">
+          <h1>ثبت نام</h1>
+          <span>در حال حاضر حساب کاربری دارید ؟ <a href="login">وارد شوید</a></span>
+        </div>
+        <div class="form">
+        <form action="/register" method="post">
+          <input type="text" name="username" id="username" placeholder="نام کاربری" />
+          <input type="email" name="email" placeholder="ایمیل" id="email" />
+          <input type="password" name="password" placeholder="رمز" id="password" />
+          <button>ثبت نام</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+</body>
+</html>
